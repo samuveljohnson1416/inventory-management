@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script defer src="js/categories.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Manage Categories</h1>
+        <a href="index.html">🏠 Home</a>
+    </header>
+    <nav>
+        <a href="categories.html">Categories</a>
+        <a href="products.html">Products</a>
+        <a href="customers.html">Customers</a>
+        <a href="orders.html">Orders</a>
+    </nav>
+<br>
+<br>
+<br>
+
+  <center>  <form id="categoryForm">
+        <input type="text" id="category_name" placeholder="Category Name" required>
+        <button type="submit">Add Category</button>
+    </form>
+
+    <h2>Category List</h2>
+    <table>
+        <thead>
+            <tr><th>ID</th><th>Name</th><th>Action</th></tr>
+        </thead>
+        <tbody id="categoryList"></tbody>
+    </table>
+</center>
+
+</body>
+
+</html>

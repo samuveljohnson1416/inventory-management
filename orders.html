@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orders</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script defer src="js/orders.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Orders</h1>
+        <a href="index.html">🏠 Home</a>
+    </header>
+    <nav>
+        <a href="categories.html">Categories</a>
+        <a href="products.html">Products</a>
+        <a href="customers.html">Customers</a>
+        <a href="orders.html">Orders</a>
+    </nav>
+
+
+    <center>    <!-- Form for placing orders -->
+    <form id="orderForm">
+        <label for="customerSelect">Select Customer:</label>
+        <select id="customerSelect" required>
+            <option value="">Select Customer</option>
+        </select>
+
+        <label for="productSelect">Select Product:</label>
+        <select id="productSelect" required>
+            <option value="">Select Product</option>
+        </select>
+
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" min="1" required>
+
+        <button type="submit">Place Order</button>
+    </form>
+
+    <!-- Table to display order list -->
+    <h2>Order List</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Order ID</th>
+                <th>Customer</th>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Total Amount</th>
+                <th>Date</th>
+            </tr>
+        </thead>
+        <tbody id="orderList">
+            <!-- Order rows will be dynamically loaded by orders.js -->
+        </tbody>
+    </table>
+</center>
+
+</body>
+</html>
